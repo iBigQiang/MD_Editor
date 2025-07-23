@@ -2,11 +2,20 @@
   "version": 1,
   "routes": [
     {
-      "pattern": "^/.*\\.(js|css|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot|otf)$",
+      // 规则 1：精确匹配并服务具有文件扩展名的静态文件
+      // 这个正则表达式 "^/(?:[^/]+/)*[^/.]+\\.\\w+$" 旨在匹配：
+      // - 以 "/" 开头
+      // - 后面可以跟着零个或多个目录 (例如 "/assets/", "/vendors/sub/")
+      // - 接着是文件名（不能包含点）
+      // - 最后是点 "." 和一个或多个单词字符 (a-z, A-Z, 0-9, _) 作为文件扩展名
+      // 这个模式应该能匹配到 /file.js, /assets/file.js, /folder/file.css 等
+      "pattern": "^/(?:[^/]+/)*[^/.]+\\.\\w+$",
       "methods": ["GET"],
-      "ttl": 86400
+      "ttl": 86400 // 设置较长的缓存时间
     },
     {
+      // 规则 2：对于所有其他未匹配到静态文件的请求，都回退到 index.html
+      // 这确保了应用内的路由（如 /about, /users/:id）能被 Vue Router 正确处理
       "pattern": "^.*$",
       "methods": ["GET"],
       "fallback": "index.html"
