@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "routes": [
+    {
+      "pattern": "^/.*\\.(js|css|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot|otf)$",
+      "methods": ["GET"],
+      "ttl": 86400
+    },
+    {
+      "pattern": "^.*$",
+      "methods": ["GET"],
+      "fallback": "index.html"
+    }
+  ],
+  "exclude": []
+}
