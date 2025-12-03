@@ -64,7 +64,7 @@ h2 {
     transparent calc(100% - 15px),
     rgba(0, 152, 116, 0) calc(100% - 0.65em),
     var(--brand-green) 100%
-  );
+  ) !important;
   line-height: 1.6;
   padding: 0 8px;
   border-radius: 10px;
