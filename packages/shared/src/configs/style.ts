@@ -234,7 +234,7 @@ export const defaultStyleConfig = {
   isMacCodeBlock: true,
   isShowLineNumber: false,
   isCountStatus: false,
-  theme: `WXGreen`,
+  theme: themeOptions[0].value,
   fontFamily: fontFamilyOptions[0].value,
   fontSize: fontSizeOptions[2].value,
   primaryColor: colorOptions[0].value,

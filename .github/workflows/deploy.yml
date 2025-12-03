@@ -12,7 +12,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.repository == 'doocs/md'
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -43,11 +42,8 @@ jobs:
 
       - name: Run build
         run: pnpm web ${{ env.BUILD_COMMAND }}
-
-      - name: Generate CNAME
-        run: |
-          mkdir -p apps/web/dist
-          echo "md.doocs.org" > apps/web/dist/CNAME
+        env:
+          GITHUB_PAGES: 1
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
