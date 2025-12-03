@@ -56,11 +56,7 @@ h2 {
   font-weight: 600 !important;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  background-color: transparent;
-  background-clip: content-box;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: linear-gradient(to bottom,
+  background: linear-gradient(to bottom,
     transparent calc(100% - 15px),
     rgba(0, 152, 116, 0) calc(100% - 0.65em),
     var(--brand-green) 100%
@@ -152,8 +148,7 @@ p {
 blockquote {
   font-style: italic;
   padding: 1em 1em 1em 2em;
-  border: 1px solid var(--blockquote-border-color);
-  border-left: 4px solid var(--md-primary-color);
+  border-left: 4px solid var(--md-primary-color) !important;
   border-radius: 6px;
   color: rgba(0, 0, 0, 0.6);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
