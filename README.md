@@ -12,15 +12,9 @@
 
 </div>
 
-## 🎯 赞助商
+## 🌐 在线编辑器地址
 
-<div align="center">
-
-[![302.AI](https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/md/images/sponsor-1.jpg)](https://share.302.ai/ftIXIE)
-
-</div>
-
-> **[302.AI](https://share.302.ai/ftIXIE)** 是一个按用量付费的企业级 AI 资源平台，提供市场上最新、最全面的 AI 模型和 API，以及多种开箱即用的在线 AI 应用。
+[https://ibigqiang.github.io/MD_Editor/](https://ibigqiang.github.io/MD_Editor/)
 
 ## 📝 项目介绍
 
@@ -28,9 +22,7 @@
 
 **如果这个项目对你有帮助，请给我们点个 Star ⭐️**，我们会持续更新和维护！
 
-## 🌐 在线编辑器地址
-
-[https://ibigqiang.github.io/MD_Editor/](https://ibigqiang.github.io/MD_Editor/)
+> 本仓库是基于 [https://github.com/doocs/md](https://github.com/doocs/md) 开源版本优化迭代而来，集合以上优化升级修改文件内对应内容。
 
 > **推荐使用 Chrome 浏览器**，效果最佳。
 
