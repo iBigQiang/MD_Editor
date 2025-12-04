@@ -372,6 +372,7 @@ td {
   background-size: 100% 0.5em; /* 厚度调整 */
   border-radius: 1px; /* 如果需要圆角可以添加 */
   font-weight: 550;
+  padding: 2px 5px;
 }
 .markup-wavyline {
   text-decoration: underline wavy;
