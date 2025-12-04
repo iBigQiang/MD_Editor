@@ -234,10 +234,10 @@ export const defaultStyleConfig = {
   isMacCodeBlock: true,
   isShowLineNumber: false,
   isCountStatus: false,
-  theme: themeOptions[0].value,
+  theme: themeOptions[3].value,
   fontFamily: fontFamilyOptions[0].value,
   fontSize: fontSizeOptions[2].value,
-  primaryColor: colorOptions[0].value,
+  primaryColor: colorOptions[1].value,
   codeBlockTheme: codeBlockThemeOptions[23].value,
   legend: legendOptions[3].value,
 }
